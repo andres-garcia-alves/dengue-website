@@ -2,7 +2,7 @@
     display: flex;
     gap: 25px;
     margin: 40px 0;
-    padding: 5px 50px;
+    padding: 0px 50px;
 }
 
 .news-list-even {
@@ -22,13 +22,27 @@
 }
 
 .news-list a {
-    font-size: 20px;
-    margin: 10px 0;
-    padding: 10px 0;
+    /*display: inline-block;*/
     color: var(--text-primary-color);
-    display: inline-block;
-    font-weight: bold;
+    margin: 0px 0px;
+    padding: 10px 10px;
+    border: 1px solid var(--text-primary-color);
+    border-radius: 10px;
     /*text-transform: uppercase;*/
+}
+
+.news-list a:hover {
+    background-color: var(--bg-secondary-color);
+    opacity: 0.9;
+}
+
+.news-list a h2 {
+    font-weight: bold;
+}
+
+.news-list a p {
+    margin-top: 10px;
+    text-align: justify;
 }
 
 .news-detail h1 {
