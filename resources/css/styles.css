@@ -1,3 +1,5 @@
+@import url("/resources/css/mediaqueries.css");
+
 /* custom properties */
 :root {
   --bg-primary-color: #007367; /* #006B72; */
@@ -231,83 +233,4 @@ hr {
   margin-bottom: 20px;
   padding: 40px 0px 20px 0px;
   text-align: center;
-}
-
-
-/* media queries (responsive) */
-@media (max-width: 1024px) {
-
-  .menu-btn {
-    display: block;
-  }
-
-  .menu-btn:hover {
-    opacity: 0.5;
-  }
-
-  .nav-main ul.nav-menu {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: var(--bg-secondary-color);
-    width: 50%;
-    max-width: 320px;
-    height: 100%;
-    border-right: 1px solid var(--text-primary-color);
-    opacity: 0.9;
-    padding: 30px;
-    transform: translateX(-500px);
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .nav-main ul.nav-menu li {
-    padding: 20px;
-    border-bottom: solid 1px var(--text-primary-color);
-    font-size: 14px;
-  }
-
-  .nav-main ul.nav-menu li:last-child {
-    border-bottom: 0;
-  }
-
-  .nav-main ul.nav-menu.show {
-    transform: translateX(-20px);
-  }
-
-  .nav-main ul.nav-menu-right {
-    margin-right: 50px;
-  }
-
-  .news-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .cards-banner .content {
-    width: 80%;
-  }
-
-  .footer-links .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  
-  .news-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .cards-banner .content {
-    width: 100%;
-    padding: 60px 20px;
-  }
-
-  .footer-links .footer-container {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-links .footer-container ul {
-    text-align: center;
-  }
 }
