@@ -1,4 +1,4 @@
-@import url("/resources/css/mediaqueries.css");
+@import url("./mediaqueries.css");
 
 /* custom properties */
 :root {
@@ -116,7 +116,7 @@ hr {
 .showcase {
   width: 100%;
   height: 550px;
-  background: url("/resources/img/showcase.jpg") no-repeat center center/cover;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -189,11 +189,11 @@ hr {
 }
 
 #banner-cards-one {
-  background: url("/resources/img/banner-01.jpg") no-repeat center center/cover;
+  background: url("../img/banner-01.jpg") no-repeat center center/cover;
 }
 
 #banner-cards-two {
-  background: url("/resources/img/banner-02.jpg") no-repeat center center/cover;
+  background: url("../img/banner-02.jpg") no-repeat center center/cover;
 }
 
 

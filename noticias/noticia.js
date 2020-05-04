@@ -31,7 +31,7 @@ function renderData(news) {
     <h1>${news.title}</h1>
 
     <!-- showcase -->
-    <img src="/resources/img/news-02.jpg" alt="" />
+    <img src="../resources/img/news-02.jpg" alt="" />
 
     <!-- content -->
     <p>${news.body}</p>

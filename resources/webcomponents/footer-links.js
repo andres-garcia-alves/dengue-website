@@ -9,14 +9,14 @@ class FooterLinks extends HTMLElement {
         </div>
 
         <div class="footer-links">
-            <p><a href="/autotest/autotest.html">Auto-Test</a></p>
-            <p><a href="/hospitales/hospitales.html">Hospitales</a></p>
-            <p><a href="/mapa/mapa.html">Mapa de Calor</a></p>
-            <p><a href="/noticias/noticias.html">Noticias</a></p>
-            <p><a href="/prevencion/prevencion.html">Prevención</a></p>
-            <p><a href="/sintomas/sintomas.html">Síntomas</a></p>
-            <p><a href="/telefonos/telefonos.html">Teléfonos Utiles</a></p>
-            <p><a href="/tratamientos/tratamientos.html">Tratamientos</a></p>
+            <p><a href="../autotest/autotest.html">Auto-Test</a></p>
+            <p><a href="../hospitales/hospitales.html">Hospitales</a></p>
+            <p><a href="../mapa/mapa.html">Mapa de Calor</a></p>
+            <p><a href="../noticias/noticias.html">Noticias</a></p>
+            <p><a href="../prevencion/prevencion.html">Prevención</a></p>
+            <p><a href="../sintomas/sintomas.html">Síntomas</a></p>
+            <p><a href="../telefonos/telefonos.html">Teléfonos Utiles</a></p>
+            <p><a href="../tratamientos/tratamientos.html">Tratamientos</a></p>
         </div>
     </div>
 

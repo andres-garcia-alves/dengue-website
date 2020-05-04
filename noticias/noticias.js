@@ -37,9 +37,9 @@ function renderData() {
 function renderDataEven(news) {
   return `
   <div class="news-list news-list-even">
-    <img src="/resources/img/news-02.jpg" alt="" />
+    <img src="../resources/img/news-02.jpg" alt="" />
     <div>
-      <a href="/noticias/noticia.html?id=${news.id}">${news.title}</a>
+      <a href="./noticia.html?id=${news.id}">${news.title}</a>
       <p>${news.body}</p>
     </div>
     </br>
@@ -49,9 +49,9 @@ function renderDataEven(news) {
 function renderDataOdd(news) {
   return `
   <div class="news-list news-list-odd">
-    <img src="/resources/img/news-02.jpg" alt="" />
+    <img src="../resources/img/news-02.jpg" alt="" />
     <div>
-      <a href="/noticias/noticia.html?id=${news.id}">${news.title}</a>
+      <a href="./noticia.html?id=${news.id}">${news.title}</a>
       <p>${news.body}</p>
     </div>
     </br>
