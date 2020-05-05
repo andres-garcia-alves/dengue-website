@@ -30,10 +30,6 @@ a {
   text-decoration: none;
 }
 
-a i {
-  margin-left: 10px;
-}
-
 ul {
   list-style: none;
 }
@@ -96,13 +92,13 @@ hr {
 }
 
 
-/* showcase */
+/* buttons */
 .btn {
   cursor: pointer;
   display: inline-block;
   border: 0;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 10px 30px;
   background: var(--btn-color);
   color: var(--text-primary-color);
   font-size: 15px;
@@ -113,6 +109,13 @@ hr {
   opacity: 0.9;
 }
 
+.btn i {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+
+/* showcase */
 .showcase {
   width: 100%;
   height: 550px;

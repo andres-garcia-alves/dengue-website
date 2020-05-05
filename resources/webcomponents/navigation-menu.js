@@ -10,8 +10,10 @@ class NavigationMenu extends HTMLElement {
     <nav class="nav-main">
 
       <!-- logo -->
-      <img src="../resources/img/brand.png" alt="TechNews Logo" class="nav-brand">
-      
+      <a href="../home/index.html">
+        <img src="../resources/img/brand.png" alt="TechNews Logo" class="nav-brand">
+      </a>
+
       <!-- navigation menu -->
       <ul class="nav-menu">
           <li><a href="../autotest/autotest.html">Auto-Test</a></li>

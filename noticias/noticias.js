@@ -1,59 +1,87 @@
 async function buildContent() {
-  content = document.querySelector("#content");
 
+  // build pager
+  btnNext = document.querySelector("#btn-next");
+  btnPrev = document.querySelector("#btn-prev");
+  this.buildPager(btnNext, btnPrev);   
+  
+  // get & render the news
+  content = document.querySelector("#content");
   news = await this.getData();
-  content.innerHTML = this.renderData(news);
+  this.renderData(content, news);
+
+  /* scroll reveal */
+  ScrollReveal().reveal('.news-item', { delay: 500 });
 };
 
 async function getData() {
 
   try {
-    // arrange
+    // page number
+    const url = new URL(window.location.href);
+    let pageNumber = parseInt(url.searchParams.get("page"));
+    if (isNaN(pageNumber) || pageNumber <= 0) { pageNumber = 1 }
+  
+    // request
     const request = "https://jsonplaceholder.typicode.com/posts";
 
     // get data
     response = await fetch(request);
-    responseJSON = await response.json();
-    responseJSON = responseJSON.slice(0, 10); // hardcoded: limit to 10 first results
     if (response.status != 200) { throwError(request, response); }
+
+    // parse response
+    news = await response.json();
+    news = news.slice(0, 10); // hardcoded: limit to 10 first results
 
   } catch (error) { throw error }
 
-  return responseJSON;
+  return news;
 }
 
 // build content
-function renderData() {
+function renderData(content, news) {
 
   html = "";
-  responseJSON.forEach( (news, i) => {
-    news.body = news.body.length >= 250 ? news.body.slice(1, 250) + " ..." : news.body;
-    html += Boolean(i % 2) ? this.renderDataOdd(news) : this.renderDataEven(news);
+  news.forEach( (newsItem, i) => {
+    newsItem.body = newsItem.body.length >= 250 ? newsItem.body.slice(1, 250) + " ..." : newsItem.body;
+    html += Boolean(i % 2) ? this.renderDataOdd(newsItem) : this.renderDataEven(newsItem);
   });
 
-  return html;
+  content.innerHTML = html;
 }
 
-function renderDataEven(news) {
+function renderDataEven(item) {
   return `
-  <div class="news-list news-list-even">
+  <div class="news-item news-item-even">
     <img src="../resources/img/news-02.jpg" alt="" />
-    <a href="./noticia.html?id=${news.id}">
-      <h2>${news.title}</h2>
-      <p>${news.body}</p>
+    <a href="./noticia.html?id=${item.id}">
+      <h2>${item.title}</h2>
+      <p>${item.body}</p>
     </a>
   </div>`
 }
 
-function renderDataOdd(news) {
+function renderDataOdd(item) {
   return `
-  <div class="news-list news-list-odd">
+  <div class="news-item news-item-odd">
     <img src="../resources/img/news-02.jpg" alt="" />
-    <a href="./noticia.html?id=${news.id}">
-      <h2>${news.title}</h2>
-      <p>${news.body}</p>
+    <a href="./noticia.html?id=${item.id}">
+      <h2>${item.title}</h2>
+      <p>${item.body}</p>
     </a>
   </div>`
+}
+
+function buildPager(btnNext, btnPrev) {
+
+  const url = new URL(window.location.href);
+  let pageNumber = parseInt(url.searchParams.get("page"));
+
+  if (isNaN(pageNumber) || pageNumber <= 0) { pageNumber = 1 }
+  if (pageNumber <= 1) { btnPrev.style.display = "none"; }
+
+  btnPrev.href = `noticias.html?page=${pageNumber - 1}`
+  btnNext.href = `noticias.html?page=${pageNumber + 1}`  
 }
 
 window.onload = buildContent;
