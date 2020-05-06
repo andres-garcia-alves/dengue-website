@@ -21,7 +21,7 @@ async function getData() {
     const url = new URL(window.location.href);
     let pageNumber = parseInt(url.searchParams.get("page"));
     if (isNaN(pageNumber) || pageNumber <= 0) { pageNumber = 1 }
-  
+      
     // request
     const request = "https://jsonplaceholder.typicode.com/posts";
 
