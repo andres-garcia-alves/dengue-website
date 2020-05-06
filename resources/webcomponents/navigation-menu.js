@@ -39,7 +39,7 @@ class NavigationMenu extends HTMLElement {
       </ul>
 
       <!-- search -->
-      <ul class="nav-menu-right">
+      <ul class="nav-menu-search">
         <li>
           <a href="#"><i class="fas fa-search"></i></a>
         </li>
@@ -102,10 +102,10 @@ class NavigationMenu extends HTMLElement {
       @media (max-width: 1024px) {
         .menu-btn {
           display: block !important;
-        } 
+        }
         .menu-btn:hover {
           opacity: 0.5;
-        }  
+        }
         .nav-main ul.nav-menu {
           display: block;
           position: fixed;
@@ -115,7 +115,7 @@ class NavigationMenu extends HTMLElement {
           width: 50%;
           max-width: 320px;
           height: 100%;
-          border-right: 1px solid var(--text-primary-color);
+          border-right: 1px solid var(--text-secondary-color);
           opacity: 0.9;
           padding: 30px;
           transform: translateX(-500px);
@@ -123,8 +123,11 @@ class NavigationMenu extends HTMLElement {
         }
         .nav-main ul.nav-menu li {
           padding: 20px;
-          border-bottom: solid 1px var(--text-primary-color);
+          border-bottom: solid 1px var(--text-secondary-color);
           font-size: 14px;
+        }
+        .nav-main ul.nav-menu li a {
+          color: var(--text-secondary-color);
         }
         .nav-main ul.nav-menu li:last-child {
           border-bottom: 0;
@@ -132,7 +135,7 @@ class NavigationMenu extends HTMLElement {
         .nav-main ul.nav-menu.show {
           transform: translateX(-20px);
         }
-        .nav-main ul.nav-menu-right {
+        .nav-main ul.nav-menu-search {
           margin-right: 50px;
         }
       }
