@@ -10,28 +10,35 @@ class SocialNetworksShare extends HTMLElement {
     const title = window.document.title.replace("|", "-");
     const url = window.location.href;
 
-    facebook = document.querySelector("#facebook");
+    let facebook = document.querySelector("#facebook");
     facebook.href = `http://www.facebook.com/sharer/sharer.php?title=${title}&u=${url}`;
 
-    linkedin = document.querySelector("#linkedin");
+    let linkedin = document.querySelector("#linkedin");
     linkedin.href = `https://www.linkedin.com/shareArticle?mini=true&url=${url}`;
 
-    twitter = document.querySelector("#twitter");
+    let twitter = document.querySelector("#twitter");
     twitter.href = `https://twitter.com/share?text=${title}&url=${url}`;
 
-    whatsapp = document.querySelector("#whatsapp");
+    let whatsapp = document.querySelector("#whatsapp");
     whatsapp.href = `https://web.whatsapp.com/send?text=${url}`;
-  }
+
+    let copy = document.querySelector("#copy");
+    copy.href = `javascript: if (navigator.clipboard) { navigator.clipboard.writeText('${url}'); }`;
+
+    let print = document.querySelector("#print");
+    print.href = `javascript: if (window.print) { window.print(); }`;
+}
 
   content = `
     <!-- social networks share -->
     <div class="social-networks-share">
       <span>Compartir</span>
-      <a id="facebook" href=""><i class="fab fa-facebook fa-1x"></i></a>
-      <a id="linkedin" href=""><i class="fab fa-linkedin fa-1x"></i></a>
-      <a id="twitter" href=""><i class="fab fa-twitter fa-1x"></i></a>
-      <a id="whatsapp" href=""><i class="fab fa-whatsapp fa-1x"></i></a>
-      <a rel="nofollow" href="javascript:if(window.print)window.print()"><i class="fas fa-print fa-1x"></i></a>
+      <a id="facebook" href="" target="_blank" title="facebook"><i class="fab fa-facebook fa-1x"></i></a>
+      <a id="linkedin" href="" target="_blank" title="linkedin"><i class="fab fa-linkedin fa-1x"></i></a>
+      <a id="twitter" href="" target="_blank" title="twitter"><i class="fab fa-twitter fa-1x"></i></a>
+      <a id="whatsapp" href="" target="_blank" title="whatsapp"><i class="fab fa-whatsapp fa-1x"></i></a>
+      <a id="copy" href="" title="copiar enlace"><i class="fas fa-link fa-1x"></i></a>
+      <a id="print" href="" title="imprimir" rel="nofollow"><i class="fas fa-print fa-1x"></i></a>
     </div>
   `;
 

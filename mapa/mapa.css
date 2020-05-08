@@ -1,0 +1,18 @@
+.card {
+  color: var(--text-secondary-color);
+  background-color: var(--bg-secondary-color);
+  padding: 20px 30px;
+}
+
+.card #stats {
+  color: red;
+}
+
+#map {
+  margin: 20px 0px 0px 0px;
+}
+
+.source {
+  font-size: 12px;
+  padding: 10px 0px 0px 0px;
+}

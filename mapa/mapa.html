@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="../resources/css/styles.css">
+  <link rel="stylesheet" href="./mapa.css">
 </head>
 
 <body>
@@ -19,7 +20,16 @@
     <navigation-menu></navigation-menu>
 
     <!-- content -->
-    <div id="content">N/A</div>
+    <div class="card">
+      <span>Total de casos:</span>
+      <span id="stats"></span>
+    </div>
+    
+    <div id="map"></div>
+
+    <div class="source">Fuente:
+      <a href="https://datos.gob.ar/dataset/salud-vigilancia-enfermedades-por-virus-dengue-zika">https://datos.gob.ar/dataset/salud-vigilancia-enfermedades-por-virus-dengue-zika</a>
+    </div>
 
     <!-- share content -->
     <social-networks-share></social-networks-share>
@@ -33,6 +43,7 @@
     <script src="../resources/webcomponents/navigation-menu.js"></script>
     <script src="../resources/webcomponents/social-networks-share.js"></script>
     <script src="../resources/webcomponents/footer-links.js"></script>
-
+    <script src="../resources/js/utils.js"></script>
+    <script src="./mapa.js"></script>
 </body>
 </html>

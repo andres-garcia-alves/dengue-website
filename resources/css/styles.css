@@ -1,12 +1,6 @@
 /* custom properties */
 :root {
-  /*--bg-primary-color: #007367;
-  --bg-secondary-color: #2f3640;
-  --text-primary-color: #F9F9F9;
-  --text-secondary-color: #2f3640;
-  --text-tertiary-color: #007367;
-  --btn-color: #262626;*/
-
+  /* Light theme: */
   --bg-primary-color: #F9F9F9;
   --bg-secondary-color: #2f3640;
   --bg-tertiary-color: #007367;
@@ -14,6 +8,14 @@
   --text-secondary-color: #F9F9F9;
   --text-tertiary-color: #007367;
   --btn-color: #262626;
+
+  /* Dark theme:
+  --bg-primary-color: #007367;
+  --bg-secondary-color: #2f3640;
+  --text-primary-color: #F9F9F9;
+  --text-secondary-color: #2f3640;
+  --text-tertiary-color: #007367;
+  --btn-color: #262626;*/
 }
 
 /* global */
