@@ -7,12 +7,13 @@ async function loadConfig() {
 
   try {
     // get data
-    let response = await fetch("/config.json");
+    const request = "../config.json";
+    const response = await fetch(request);
     if (response.status != 200) { throwError(request, response); }
 
     // parse response
-    let config = await response.json();
+    const config = await response.json();
     return config;
 
-  } catch (error) { throw error }
+  } catch (error) { throw error; }
 }
