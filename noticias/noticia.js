@@ -15,12 +15,13 @@ async function getData() {
 
     // get data
     response = await fetch(request);
-    responseJSON = await response.json();
     if (response.status != 200) { throwError(request, response); }
 
-  } catch (error) { throw error }
+    // parse response
+    news = await response.json();
+    return news;
 
-  return responseJSON;
+  } catch (error) { throw error }
 }
 
 // build content

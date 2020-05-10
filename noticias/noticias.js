@@ -32,10 +32,9 @@ async function getData() {
     // parse response
     news = await response.json();
     news = news.slice(0, 10); // hardcoded: limit to 10 first results
+    return news;
 
   } catch (error) { throw error }
-
-  return news;
 }
 
 // build content

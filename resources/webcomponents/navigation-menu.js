@@ -120,6 +120,7 @@ class NavigationMenu extends HTMLElement {
           padding: 30px;
           transform: translateX(-500px);
           transition: transform 0.5s ease-in-out;
+          z-index: 10;
         }
         .nav-main ul.nav-menu li {
           padding: 20px;
