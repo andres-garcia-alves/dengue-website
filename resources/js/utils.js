@@ -1,8 +1,3 @@
-function throwError(request, response) {
-  error = Error(`Status: ${response.status}, URI: ${request}`); 
-  throw error
-}
-
 async function loadConfig() {
 
   try {
@@ -16,4 +11,9 @@ async function loadConfig() {
     return config;
 
   } catch (error) { throw error; }
+}
+
+function throwError(request, response) {
+  error = Error(`Status: ${response.status}, URI: ${request}`); 
+  throw error
 }
