@@ -66,7 +66,7 @@ async function renderJavascriptAPI(div, markersData, config) {
     }
     map = new google.maps.Map(div, mapOptions);
     
-    markersData.forEach( (item, i) => {
+    /* markersData.forEach( (item, i) => {
       const { state, city, lat, long, cases, intensity } = item;
 
       // marker
@@ -78,7 +78,7 @@ async function renderJavascriptAPI(div, markersData, config) {
       let marker = new google.maps.Marker(markerOptions);
 
       marker.addListener('click', () => {});
-    });
+    }); */
   }
 }
 
