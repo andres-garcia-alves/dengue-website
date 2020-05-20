@@ -106,7 +106,7 @@ async function renderJavascriptAPI(div, markersData, config) {
         content: `<span style='font-weight: 600;'>${city}, ${state}</span></br>Casos: ${cases}`,
         maxWidth: 200
       });     
-      marker.addListener('click', () => { infoWindow.open(map, marker); console.log(map); });
+      marker.addListener('click', () => { infoWindow.open(map, marker); });
 
       heatmapData.push({
         location: new google.maps.LatLng(lat, long),
