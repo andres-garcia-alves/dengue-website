@@ -40,11 +40,11 @@ class NavigationMenu extends HTMLElement {
       </ul>
 
       <!-- search -->
-      <ul class="nav-menu-search">
+      <!-- <ul class="nav-menu-search">
         <li>
           <a href="#"><i class="fas fa-search"></i></a>
         </li>
-      </ul>
+      </ul> -->
         
     </nav>
     <hr>
