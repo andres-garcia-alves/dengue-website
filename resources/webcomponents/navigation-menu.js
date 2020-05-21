@@ -23,8 +23,8 @@ class NavigationMenu extends HTMLElement {
     <nav class="nav-main">
 
       <!-- logo -->
-      <a href="../home/index.html">
-        <img class="nav-brand" src="../resources/img/brand.png" alt="TechNews Logo">
+      <a href="../home/index.html" title="inicio">
+        <img class="nav-brand" src="../resources/img/brand.png" alt="Logo">
       </a>
 
       <!-- navigation menu -->
@@ -36,6 +36,7 @@ class NavigationMenu extends HTMLElement {
         <li><a href="../prevencion/prevencion.html">Prevención</a></li>
         <li><a href="../sintomas/sintomas.html">Síntomas</a></li>
         <li><a href="../telefonos/telefonos.html">Tel. Utiles</a></li>
+        <li><a href="../nosotros/nosotros.html">Nosotros</a></li>
       </ul>
 
       <!-- search -->
