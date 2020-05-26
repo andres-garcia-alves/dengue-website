@@ -22,14 +22,15 @@ class FooterLinks extends HTMLElement {
         <p><a href="../prevencion/prevencion.html">Prevención</a></p>
         <p><a href="../sintomas/sintomas.html">Síntomas</a></p>
         <p><a href="../telefonos/telefonos.html">Teléfonos Utiles</a></p>
+        <p><a href="../nosotros/nosotros.html">Nosotros</a></p>
       </div>
     </div>
 
     <!-- footer copyright -->
     <footer class="footer-copyright">
-      <span>Copyright</span>
+    <!-- <span>Copyright</span>
       <i class="far fa-copyright"></i>
-      <span>2020 - Desarrollo de un Proyecto, CAECE</span>   
+      <span>2020 - Desarrollo de un Proyecto, CAECE</span> -->
     </footer>
   `;
 
@@ -47,7 +48,7 @@ class FooterLinks extends HTMLElement {
       }
       .footer-links {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         align-items: flex-start;
         justify-content: center;
