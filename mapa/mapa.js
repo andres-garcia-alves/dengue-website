@@ -31,7 +31,7 @@ async function getData() {
 }
 
 async function getTestData() {
-  markers = [
+  const markers = [
     { state: "C.A.B.A.", city: "CAECE", lat: -34.6090000, long: -58.3786700, cases: 100, intensity: 1 },
     { state: "Buenos Aires", city: "Mar del Plata", lat: -38.0063098, long: -57.5431993, cases: 10, intensity: 1 },
     { state: "Córdoba", city: "La Falda", lat: -31.0968835, long: -64.4828954, cases: 20, intensity: 1 },

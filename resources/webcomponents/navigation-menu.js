@@ -58,7 +58,7 @@ class NavigationMenu extends HTMLElement {
         position: absolute;
         top: 15px;
         right: 30px;
-        z-index: 2;
+        z-index: 10;
         display: none;
       }
 

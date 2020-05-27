@@ -49,16 +49,13 @@
 
 /* media queries */
 @media (max-width: 1024px) {
-
-    .members {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  .members {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
   
-  @media (max-width: 600px) {
-  
-    .members {
-      grid-template-columns: repeat(2, 1fr);
-    }
+@media (max-width: 600px) {
+  .members {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
+}

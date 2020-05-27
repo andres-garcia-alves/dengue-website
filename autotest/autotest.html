@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="../resources/css/styles.css">
+  <link rel="stylesheet" href="./autotest.css">
 </head>
 
 <body>
@@ -19,7 +20,53 @@
     <navigation-menu></navigation-menu>
 
     <!-- content -->
-    <div id="content">N/A</div>
+    <div class="tiles">
+
+      <div id="card" class="card">
+        <i class="fa fa-window-close fa-2x" onclick="closeQuestion(this)"></i>
+        <h2 id="card-title"></h2>
+        <p id="card-desc"></p>
+        <div id="card-selection"></div>
+        <button id="card-btn" class="btn" onclick="nextQuestion(this)">Siguiente <i class="fas fa-chevron-right"></i></button>
+      </div>
+  
+      <div class="tile bg-one" data-question="1" onclick="showQuestion(this.dataset.question)">
+        <span>#01</span>
+      </div>
+      <div class="tile bg-one" data-question="2" onclick="showQuestion(this.dataset.question)">
+        <span>#02</span>
+      </div>
+      <div class="tile bg-one" data-question="3" onclick="showQuestion(this.dataset.question)">
+        <span>#03</span>
+      </div>
+      <div class="tile bg-one" data-question="4" onclick="showQuestion(this.dataset.question)">
+        <span>#04</span>
+      </div>
+      <div class="tile bg-one" data-question="5" onclick="showQuestion(this.dataset.question)">
+        <span>#05</span>
+      </div>
+      <div class="tile bg-two" data-question="6" onclick="showQuestion(this.dataset.question)">
+        <span>#06</span>
+      </div>
+      <div class="tile bg-one" data-question="7" onclick="showQuestion(this.dataset.question)">
+        <span>#07</span>
+      </div>
+      <div class="tile bg-one" data-question="8" onclick="showQuestion(this.dataset.question)">
+        <span>#08</span>
+      </div>
+      <div class="tile bg-two" data-question="9" onclick="showQuestion(this.dataset.question)">
+        <span>#09</span>
+      </div>
+      <div class="tile bg-two" data-question="10" onclick="showQuestion(this.dataset.question)">
+        <span>#10</span>
+      </div>
+      <div class="tile bg-two" data-question="11" onclick="showQuestion(this.dataset.question)">
+        <span>#11</span>
+      </div>
+      <div class="tile bg-two" data-question="12" onclick="showQuestion(this.dataset.question)">
+        <span>#12</span>
+      </div>
+    </div>
 
     <!-- share content -->
     <social-networks-share></social-networks-share>
@@ -29,10 +76,12 @@
 
   </div>
 
-    <!-- custom javascript -->
-    <script src="../resources/webcomponents/navigation-menu.js"></script>
-    <script src="../resources/webcomponents/social-networks-share.js"></script>
-    <script src="../resources/webcomponents/footer-links.js"></script>
+  <!-- custom javascript -->
+  <script src="../resources/webcomponents/navigation-menu.js"></script>
+  <script src="../resources/webcomponents/social-networks-share.js"></script>
+  <script src="../resources/webcomponents/footer-links.js"></script>
+  <script src="../resources/webcomponents/toggle-switch.js"></script>
+  <script src="./autotest.js"></script>
 
 </body>
 </html>
