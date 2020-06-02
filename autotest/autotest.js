@@ -1,18 +1,18 @@
 let questionIndex = 1;
 
 let questions = [
-  { id: 01, points: 0, type: "tbc", selection: null, title: "#01", description: "Indique su sexo." },
+  /*{ id: 01, points: 0, type: "tbc", selection: null, title: "#01", description: "Indique su sexo." },
   { id: 02, points: 0, type: "tbc", selection: null, title: "#02", description: "Ingrese su edad." },
   { id: 03, points: 0, type: "tbc", selection: null, title: "#03", description: "Ingrese su Provincia." },
-  { id: 04, points: 0, type: "tbc", selection: null, title: "#04", description: "Ingrese su Ciudad." },
-  { id: 05, points: 3, type: "toogle", selection: null, title: "#05", description: "¿Tuvo o tiene fiebre mayor a 37,5 grados?" },
-  { id: 06, points: 3, type: "toogle", selection: null, title: "#06", description: "¿Sufrió o sufre de dolor muscular o articular en las últimas 96 hs (4 días)?" },
-  { id: 07, points: 3, type: "toogle", selection: null, title: "#07", description: "¿Tuvo o tiene náuseas o vómitos?" },
-  { id: 08, points: 3, type: "toogle", selection: null, title: "#08", description: "¿Tiene erupciones, marcas o manchas en la piel producto de alguna picadura de mosquito?" },
-  { id: 09, points: 1, type: "toogle", selection: null, title: "#09", description: "¿Siente algún dolor o molestia en la vista?" },
-  { id: 10, points: 1, type: "toogle", selection: null, title: "#10", description: "¿Tuvo o tiene fuertes dolores de cabeza?" },
-  { id: 11, points: 1, type: "toogle", selection: null, title: "#11", description: "¿Tuvo o tiene sangrado en encías o nariz? " },
-  { id: 12, points: 1, type: "toogle", selection: null, title: "#12", description: "¿Tuvo o tiene derrames en la piel, moretones, u otras manifestaciones hemorrágicas?" }
+  { id: 04, points: 0, type: "tbc", selection: null, title: "#04", description: "Ingrese su Ciudad." },*/
+  { id: 01, points: 3, type: "toogle", selection: null, title: "#01", description: "¿Tuvo o tiene fiebre mayor a 37,5 grados?" },
+  { id: 02, points: 3, type: "toogle", selection: null, title: "#02", description: "¿Sufrió o sufre de dolor muscular o articular en las últimas 96 hs (4 días)?" },
+  { id: 03, points: 3, type: "toogle", selection: null, title: "#03", description: "¿Tuvo o tiene náuseas o vómitos?" },
+  { id: 04, points: 3, type: "toogle", selection: null, title: "#04", description: "¿Tiene erupciones, marcas o manchas en la piel producto de alguna picadura de mosquito?" },
+  { id: 05, points: 1, type: "toogle", selection: null, title: "#05", description: "¿Siente algún dolor o molestia en la vista?" },
+  { id: 06, points: 1, type: "toogle", selection: null, title: "#06", description: "¿Tuvo o tiene fuertes dolores de cabeza?" },
+  { id: 07, points: 1, type: "toogle", selection: null, title: "#07", description: "¿Tuvo o tiene sangrado en encías o nariz? " },
+  { id: 08, points: 1, type: "toogle", selection: null, title: "#08", description: "¿Tuvo o tiene derrames en la piel, moretones, u otras manifestaciones hemorrágicas?" }
 ];
 
 function closeQuestion(elem) {
@@ -26,7 +26,7 @@ function nextQuestion(elem) {
 
   this.processSelection();
 
-  questionIndex = questionIndex += 1; 
+  questionIndex = questionIndex += 1;
   if (questionIndex <= questions.length)
     this.showQuestion(questionIndex);
   else
