@@ -108,7 +108,7 @@ async function renderJavascriptAPI(div, markersData, config) {
       // marker
       let markerOptions = {
         map: map,
-        position: { lat: parseInt(latitude), lng: parseInt(longitude) },
+        position: { lat: parseFloat(latitude), lng: parseFloat(longitude) },
         title: `${city}, ${state}`
       };
       let marker = new google.maps.Marker(markerOptions);
@@ -122,7 +122,7 @@ async function renderJavascriptAPI(div, markersData, config) {
       marker.addListener('click', () => { infoWindow.open(map, marker); });
 
       heatmapData.push({
-        location: new google.maps.LatLng(parseInt(latitude), parseInt(longitude)),
+        location: new google.maps.LatLng(parseFloat(latitude), parseFloat(longitude)),
         weight: cases
       });
     });
