@@ -104,6 +104,7 @@ async function renderJavascriptAPI(div, markersData, config) {
     // markers
     markersData.forEach( (item, i) => {
       const { state, city, latitude, longitude, cases, intensity } = item;
+      if (cases == 0) { return; }
 
       // marker
       let markerOptions = {
@@ -123,7 +124,7 @@ async function renderJavascriptAPI(div, markersData, config) {
 
       heatmapData.push({
         location: new google.maps.LatLng(parseFloat(latitude), parseFloat(longitude)),
-        weight: cases
+        weight: intensity
       });
     });
   
