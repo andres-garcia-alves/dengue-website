@@ -1,3 +1,10 @@
+window.onload = buildContent;
+
+let map, heatmap;
+let markers = [];
+
+
+// main
 async function buildContent() {
 
   stats = document.querySelector("#stats");
@@ -7,7 +14,7 @@ async function buildContent() {
   let config = await loadConfig();
 
   // get markers
-  markersData = await this.getTestData(); // ToDo: cambiar por getData()
+  markersData = await this.getData(); // this.getTestData()
 
   // render markers
   this.renderTotals(stats, markersData, config);
@@ -16,46 +23,51 @@ async function buildContent() {
   // this.renderStaticAPI(map, markersData);
 };
 
+
+// data retrieval
 async function getData() {
 
   try {
     // get data
-    let response = await fetch("/map/markers");
+    let response = await fetch("https://marker-service.herokuapp.com/map/markers");
     if (response.status != 200) { throwError(request, response); }
 
     // parse response
-    let markers = await response.json();
-    return markers;
+    let markersData = await response.json();
+    return markersData;
 
   } catch (error) { throw error }
 }
 
+
+// test data retrieval
 async function getTestData() {
-  const markers = [
-    { state: "C.A.B.A.", city: "CAECE", lat: -34.6090000, long: -58.3786700, cases: 100, intensity: 1 },
-    { state: "Buenos Aires", city: "Mar del Plata", lat: -38.0063098, long: -57.5431993, cases: 10, intensity: 1 },
-    { state: "Córdoba", city: "La Falda", lat: -31.0968835, long: -64.4828954, cases: 20, intensity: 1 },
-    { state: "Salta", city: "Los Andes", lat: -24.2804591, long: -66.9380861, cases: 30, intensity: 1 },
-    { state: "Santa Fe", city: "Rosario", lat: -32.976674, long: -60.6861702, cases: 40, intensity: 1 }
+  const markersData = [
+    { state: "C.A.B.A.", city: "CAECE", latitude: -34.6090000, longitude: -58.3786700, cases: 100, intensity: 1 },
+    { state: "Buenos Aires", city: "Mar del Plata", latitude: -38.0063098, longitude: -57.5431993, cases: 10, intensity: 1 },
+    { state: "Córdoba", city: "La Falda", latitude: -31.0968835, longitude: -64.4828954, cases: 20, intensity: 1 },
+    { state: "Salta", city: "Los Andes", latitude: -24.2804591, longitude: -66.9380861, cases: 30, intensity: 1 },
+    { state: "Santa Fe", city: "Rosario", latitude: -32.976674, longitude: -60.6861702, cases: 40, intensity: 1 }
   ];
 
-  return markers;
+  return markersData;
 }
 
-// build content
-function renderTotals(div, markersData) {
 
-  const reducer = (result, marker) => result + marker.cases;
-  const total = markersData.reduce(reducer, 0);
-
-  div.innerHTML = total;
-}
-
-let map, heatmap;
-
+// toggle Heatmap
 function toggleHeatmap() {
   heatmap.setMap(heatmap.getMap() ? null : map);
 }
+
+
+// toggle Markers
+function toggleMarkers() {
+
+  markers.forEach( (marker, i) => {
+    marker.setMap(marker.getMap() ? null : map);
+  });
+}
+
 
 // build content
 async function renderJavascriptAPI(div, markersData, config) {
@@ -91,15 +103,16 @@ async function renderJavascriptAPI(div, markersData, config) {
 
     // markers
     markersData.forEach( (item, i) => {
-      const { state, city, lat, long, cases, intensity } = item;
+      const { state, city, latitude, longitude, cases, intensity } = item;
 
       // marker
       let markerOptions = {
         map: map,
-        position: { lat: lat, lng: long },
+        position: { lat: parseInt(latitude), lng: parseInt(longitude) },
         title: `${city}, ${state}`
       };
       let marker = new google.maps.Marker(markerOptions);
+      markers.push(marker);
 
       // info window
       var infoWindow = new google.maps.InfoWindow({
@@ -109,7 +122,7 @@ async function renderJavascriptAPI(div, markersData, config) {
       marker.addListener('click', () => { infoWindow.open(map, marker); });
 
       heatmapData.push({
-        location: new google.maps.LatLng(lat, long),
+        location: new google.maps.LatLng(parseInt(latitude), parseInt(longitude)),
         weight: cases
       });
     });
@@ -122,6 +135,16 @@ async function renderJavascriptAPI(div, markersData, config) {
     });
   }
 }
+
+// build content
+function renderTotals(div, markersData) {
+
+  const reducer = (result, marker) => result + marker.cases;
+  const total = markersData.reduce(reducer, 0);
+
+  div.innerHTML = total;
+}
+
 
 // build content
 /*async function renderEmbedAPI(div, markersData, config) {
@@ -148,5 +171,3 @@ async function renderJavascriptAPI(div, markersData, config) {
 
   div.innerHTML = `<img src=${request}></img>`;
 }*/
-
-window.onload = buildContent;

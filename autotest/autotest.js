@@ -103,10 +103,10 @@ function processAnswers() {
 
   let description = "";
   
-  // check completed questions (first 4 question doesn't compute)
+  // check completed questions
   let aux = "";
   questions.forEach(q => {
-    if (q.id >= 5 && q.selection === null) { aux += ` ${ q.title },`; }
+    if (q.selection === null) { aux += ` ${ q.title },`; } // q.id >= 5 && // (first 4 question doesn't compute?)
   });
   if (aux !== "") { return "Faltan contestar las preguntas:" + aux.replace(/.$/, "."); }
 
