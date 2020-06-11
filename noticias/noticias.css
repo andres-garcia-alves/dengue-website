@@ -1,6 +1,6 @@
 .news-item {
     display: flex;
-    gap: 25px;
+    gap: 10px;
     margin: 40px 0;
     padding: 0px 50px;
 }
@@ -16,7 +16,7 @@
 }
 
 .news-item img {
-    width: 300px;
+    width: 250px;
     height: 180px;
     border-radius: 4px;
 }
