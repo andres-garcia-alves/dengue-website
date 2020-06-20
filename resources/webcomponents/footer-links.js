@@ -21,7 +21,7 @@ class FooterLinks extends HTMLElement {
         <p><a href="../noticias/noticias.html">Noticias</a></p>
         <p><a href="../prevencion/prevencion.html">Prevención</a></p>
         <p><a href="../sintomas/sintomas.html">Síntomas</a></p>
-        <p><a href="../telefonos/telefonos.html">Teléfonos Utiles</a></p>
+        <p><a href="../transmision/transmision.html">Transmisión</a></p>
         <p><a href="../nosotros/nosotros.html">Nosotros</a></p>
       </div>
     </div>

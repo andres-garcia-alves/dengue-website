@@ -33,7 +33,7 @@ class SocialNetworksShare extends HTMLElement {
 
     let print = document.querySelector("#print");
     print.href = `javascript: if (window.print) { window.print(); }`;
-}
+  }
 
   content = `
     <!-- social networks share -->

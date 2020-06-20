@@ -35,7 +35,7 @@ class NavigationMenu extends HTMLElement {
         <li><a href="../noticias/noticias.html">Noticias</a></li>
         <li><a href="../prevencion/prevencion.html">Prevención</a></li>
         <li><a href="../sintomas/sintomas.html">Síntomas</a></li>
-        <li><a href="../telefonos/telefonos.html">Tel. Utiles</a></li>
+        <li><a href="../transmision/transmision.html">Transmisión</a></li>
         <li><a href="../nosotros/nosotros.html">Nosotros</a></li>
       </ul>
 
