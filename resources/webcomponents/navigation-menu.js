@@ -114,6 +114,7 @@ class NavigationMenu extends HTMLElement {
           left: 0;
           background: var(--bg-secondary-color);
           width: 50%;
+          min-width: 210px;
           max-width: 320px;
           height: 100%;
           border-right: 1px solid var(--text-secondary-color);
