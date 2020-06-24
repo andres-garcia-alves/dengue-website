@@ -13,8 +13,6 @@
 }
 
 .row img {
-  border-radius: 5%;
-  padding: 0px 10px;
   width: 100%;
 }
 
@@ -40,37 +38,68 @@
 .cols-11 { width: 91.67%; }
 .cols-12 { width: 100%; }
 
-#prevencion-01 {
+/* images */
+#img-prevencion {
   border: solid 1px black;
+  border-radius: 20px;
   padding: 0px 0px;
   width: 70%;
   max-width: 755px;
 }
 
-#prevencion-02 {
-  width: 80%;
+#img-sabias-que {
+  width: 100%;
+  max-width: 500px;
+}
+
+#img-especie-01, #img-especie-02, #img-especie-03 {
+  width: 95%;
+  max-width: 500px;
+}
+
+#img-ciclo {
+  width: 95%;
   max-width: 300px;
 }
 
-#prevencion-03 {
-  border: solid 1px black;
-  border-radius: 0;
+#img-historia {
+  border-radius: 10px;
   padding: 0px 0px;
   width: 50%;
   max-width: 567px;
 }
 
-#prevencion-04 {
+#row-juntos {
+  flex-direction: row-reverse;
+}
+
+#img-slogan-juntos {
   max-width: 405px;
 }
 
-#prevencion-05 {
+#img-prevenir-agua-01,
+#img-prevenir-agua-02,
+#img-prevenir-picadura {
+  border: solid 1px black;
+  border-radius: 20px;
   width: 66%;
   max-width: 600px;
 }
 
+/* miscellaneous */
 .center {
   text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.link {
+  color: blue;
+  border-bottom: 1px solid blue;
+  padding-bottom: 0px;
+  /*text-decoration: underline solid blue;*/
 }
 
 .note {
@@ -125,4 +154,25 @@
   .cols-10 { width: 100%; }
   .cols-11 { width: 100%; }
   .cols-12 { width: 100%; }
+
+  #row-prevencion,
+  #img-prevencion {
+    display: none;
+  }
+
+  #img-sabias-que {
+    width: 60%;
+    max-width: 500px;
+  }
+
+  #row-juntos {
+    flex-direction: column;
+  }  
+
+  #col-prevenir-agua-01,
+  #img-prevenir-agua-01,
+  #col-prevenir-picadura,
+  #img-prevenir-picadura {
+    display: none;
+  }
 }

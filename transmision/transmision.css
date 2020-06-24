@@ -40,18 +40,20 @@
 .cols-11 { width: 91.67%; }
 .cols-12 { width: 100%; }
 
-#transmision-01 {
+/* images */
+#mosquito-01 {
   max-width: 400px;
 }
 
-#transmision-02 {
+#mosquito-02 {
   max-width: 400px;
 }
 
-#transmision-03 {
+#transmision {
   border: solid 1px black;
 }
 
+/* miscellaneous */
 .center {
   text-align: center;
 }
