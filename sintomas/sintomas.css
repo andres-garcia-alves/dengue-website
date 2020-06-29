@@ -1,0 +1,217 @@
+/* content */
+.content {
+  font-size: 16px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row h2 {
+  padding: 0px 10px;
+}
+
+.row img {
+  width: 100%;
+}
+
+.row p {
+  line-height: 30px;
+  padding: 0px 20px;
+}
+
+.col {
+  margin: 20px 0px;
+}
+
+.cols-1 { width: 8.33%; }
+.cols-2 { width: 16.67%; }
+.cols-3 { width: 25.00%; }
+.cols-4 { width: 33.33%; }
+.cols-5 { width: 41.66%; }
+.cols-6 { width: 50.00%; }
+.cols-7 { width: 58.33%; }
+.cols-8 { width: 66.67%; }
+.cols-9 { width: 75.00%; }
+.cols-10 { width: 83.33%; }
+.cols-11 { width: 91.67%; }
+.cols-12 { width: 100%; }
+
+/* images */
+#img-sintomas {
+  border: solid 1px black;
+  border-radius: 20px;
+  padding: 0px 0px;
+  width: 60%;
+  max-height: 450px;
+  max-width: 755px;
+}
+
+#img-resumen {
+  max-width: 150px;
+  display: inline-block;
+}
+
+#img-dengue {
+  max-width: 200px;
+}
+
+#img-zika {
+  max-width: 200px;
+}
+
+#img-chikungunya {
+  max-width: 200px;
+}
+
+#img-sintomasytratamiento {
+  max-height: 380px;
+}
+
+#img-listasintomas {
+  min-height: 380px;
+}
+
+#img-sabias-que {
+  width: 95%;
+  max-width: 500px;
+}
+
+#img-especie-01, #img-especie-02, #img-especie-03 {
+  width: 95%;
+  max-width: 500px;
+}
+
+#img-ciclo {
+  width: 95%;
+  max-width: 300px;
+}
+
+#img-historia {
+  border-radius: 10px;
+  padding: 0px 0px;
+  width: 50%;
+  max-width: 567px;
+}
+
+#row-juntos {
+  flex-direction: row-reverse;
+}
+
+#img-slogan-juntos {
+  max-width: 405px;
+}
+
+#img-prevenir-agua-01,
+#img-prevenir-agua-02,
+#img-prevenir-picadura {
+  border: solid 1px black;
+  border-radius: 20px;
+  width: 66%;
+  max-width: 600px;
+}
+
+/* miscellaneous */
+.center {
+  text-align: center;
+}
+
+.center2 {
+  text-align: -webkit-center;
+}
+
+.right {
+  text-align: right;
+}
+
+.empty {
+  height: 45px;
+}
+
+.link {
+  color: blue;
+  border-bottom: 1px solid blue;
+  padding-bottom: 0px;
+  /*text-decoration: underline solid blue;*/
+}
+
+.note {
+  font-size: 0.8em;
+}
+
+.resumen-table{
+  width: 100%;
+  display: contents;
+}
+
+.fa {
+  font-size: 12px;
+  color: goldenrod;
+  margin-right: 5px;
+}
+
+.list-group {
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  padding-left:0;
+  margin-bottom:0;
+  border-radius:.25rem
+}
+
+.list-group-item {
+  position:relative;
+  display:block;
+  padding:.75rem 1.25rem;
+  background-color:#fff;
+  border:1px solid rgba(0,0,0,.125)
+}
+
+.list-group-item-dark {
+  color:#1b1e21;
+  background-color:#c6c8ca
+}
+
+/* media queries */
+@media (max-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cols-1 { width: 100%; }
+  .cols-2 { width: 100%; }
+  .cols-3 { width: 100%; }
+  .cols-4 { width: 100%; }
+  .cols-5 { width: 100%; }
+  .cols-6 { width: 100%; }
+  .cols-7 { width: 100%; }
+  .cols-8 { width: 100%; }
+  .cols-9 { width: 100%; }
+  .cols-10 { width: 100%; }
+  .cols-11 { width: 100%; }
+  .cols-12 { width: 100%; }
+
+  #row-prevencion,
+  #img-prevencion {
+    display: none;
+  }
+
+  #img-sabias-que {
+    width: 60%;
+    max-width: 500px;
+  }
+
+  #row-juntos {
+    flex-direction: column;
+  }  
+
+  #col-prevenir-agua-01,
+  #img-prevenir-agua-01,
+  #col-prevenir-picadura,
+  #img-prevenir-picadura {
+    display: none;
+  }
+}

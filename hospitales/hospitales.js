@@ -218,7 +218,7 @@ function selectLocation(location) {
     element.tabIndex = 0
     element.addEventListener("click", () => {
       origMap.setZoom(16)
-      markers = Object.values(origMap.__gm.Ka.j)
+      markers = Object.values(origMap.__gm.Ja.j)
       marker = markers.find(marker => (marker.title && element.id.includes(marker.title)))
       origMap.panTo(marker.getPosition())
       
