@@ -73,45 +73,6 @@
   min-height: 380px;
 }
 
-#img-sabias-que {
-  width: 95%;
-  max-width: 500px;
-}
-
-#img-especie-01, #img-especie-02, #img-especie-03 {
-  width: 95%;
-  max-width: 500px;
-}
-
-#img-ciclo {
-  width: 95%;
-  max-width: 300px;
-}
-
-#img-historia {
-  border-radius: 10px;
-  padding: 0px 0px;
-  width: 50%;
-  max-width: 567px;
-}
-
-#row-juntos {
-  flex-direction: row-reverse;
-}
-
-#img-slogan-juntos {
-  max-width: 405px;
-}
-
-#img-prevenir-agua-01,
-#img-prevenir-agua-02,
-#img-prevenir-picadura {
-  border: solid 1px black;
-  border-radius: 20px;
-  width: 66%;
-  max-width: 600px;
-}
-
 /* miscellaneous */
 .center {
   text-align: center;
@@ -127,13 +88,6 @@
 
 .empty {
   height: 45px;
-}
-
-.link {
-  color: blue;
-  border-bottom: 1px solid blue;
-  padding-bottom: 0px;
-  /*text-decoration: underline solid blue;*/
 }
 
 .note {
@@ -181,6 +135,22 @@
     flex-direction: column;
   }
 
+  .list-group-item {
+    position:relative;
+    display:block;
+    padding: 0px 0px;
+    background-color:#fff;
+    border:1px solid rgba(0,0,0,.125)
+  }
+
+  .resumen-row {
+    display: flex;
+  }
+
+  .empty {
+    display: none;
+  }
+
   .cols-1 { width: 100%; }
   .cols-2 { width: 100%; }
   .cols-3 { width: 100%; }
@@ -194,24 +164,33 @@
   .cols-11 { width: 100%; }
   .cols-12 { width: 100%; }
 
-  #row-prevencion,
-  #img-prevencion {
-    display: none;
-  }
-
-  #img-sabias-que {
+  #img-sintomas {
     width: 60%;
-    max-width: 500px;
+    max-height: 200px;
+    max-width: 200px;
   }
 
-  #row-juntos {
-    flex-direction: column;
-  }  
+  #img-resumen {
+    max-width: 100px;
+  }
 
-  #col-prevenir-agua-01,
-  #img-prevenir-agua-01,
-  #col-prevenir-picadura,
-  #img-prevenir-picadura {
+  #img-dengue {
+    max-width: 120px;
+  }
+  
+  #img-zika {
+    max-width: 120px;
+  }
+  
+  #img-chikungunya {
+    max-width: 120px;
+  }
+
+  #img-sintomasytratamiento {
     display: none;
+  }
+  
+  #img-listasintomas {
+    min-height: 220px;
   }
 }
