@@ -24,18 +24,18 @@ async function getHospitals(locationId) {
 
 function getTestHospitals(locationId) {
   hospitals = [
-    { name: "Hospital Posadas", address: "Carlos Gardel 1209", telephones: 1159823231, notes: "", latitude: -34.6090000, longitude: -58.3786700 },
-    { name: "Hospital Mitre", address: "Carlos Gardel 1209", telephones: 1159823231, notes: "", latitude: -36.0063098, longitude: -59.5431993 },
-    { name: "Hospital Guemes", address: "Carlos Gardel 1209", telephones: 1159823231, notes: "", latitude: -38.0063098, longitude: -57.5431993 },
-    { name: "Los Arcos", address: "Carlos Gardel 1209", telephones: 1159823231, notes: "", latitude: -37.0063098, longitude: -58.5431993 },
-    { name: "Hospital Britanico", address: "Carlos Gardel 1209", telephones: 1159823231, notes: "", latitude: -31.0968835, longitude: -64.4828954 },
-    { name: "La trinidad", address: "Carlos Gardel 1209", telephones: 1159823231, notes: "", latitude: -24.2804591, longitude: -66.9380861 },
-    { name: "Hospital San Martin", address: "Carlos Gardel 1209", telephones: 1159823231, notes: "", latitude: -32.9766743, longitude: -60.6865702 },
-    { name: "Hospital Favaloro", address: "Carlos Gardel 1209", telephones: 1159823231, notes: "", latitude: -32.9736747, longitude: -60.6861702 },
-    { name: "Hospital Fitz Roy", address: "Carlos Gardel 1209", telephones: 1159823231, notes: "", latitude: -32.9766741, longitude: -60.6831502 },
-    { name: "Hospital Italiano", address: "Carlos Gardel 1209", telephones: 1159823231, notes: "", latitude: -32.9746746, longitude: -60.6871302 },
-    { name: "Hospital Rauch", address: "Carlos Gardel 1209", telephones: 1159823231, notes: "", latitude: -32.9756748, longitude: -60.6851202 },
-    { name: "Clinica San Pedro", address: "Carlos Gardel 1209", telephones: 1159823231, notes: "", latitude: -32.9776741, longitude: -60.6821102 }
+    { name: "Hospital Posadas", address: "Av. Presidente Illia 386", telephones: 1159823231, notes: "", latitude: -34.6302478, longitude: -58.5775133 },
+    { name: "Hospital Aleman", address: "Av. Pueyrredón 1640", telephones: 1159823231, notes: "", latitude: -34.5910348, longitude: -58.4073538 },
+    { name: "Sanatorio Güemes", address: "Francisco Figueroa 1240", telephones: 1159823231, notes: "", latitude: -34.6037172, longitude: -58.4758599 },
+    { name: "Los Arcos", address: "Av. Juan B. Justo 909", telephones: 1159823231, notes: "", latitude: -34.5809654, longitude: -58.429599 },
+    { name: "Hospital Britanico", address: "Perdriel 74", telephones: 1159823231, notes: "", latitude: -34.6314357, longitude: -58.3928987 },
+    { name: "La trinidad", address: "Av. Rivadavia 13280", telephones: 1159823231, notes: "", latitude: -34.6402506, longitude: -58.5539772 },
+    { name: "Hospital San Martin", address: "B1904", telephones: 1159823231, notes: "", latitude: -34.9232426, longitude: -57.9235196 },
+    { name: "Hospital Favaloro", address: "Ruta 1001", telephones: 1159823231, notes: "", latitude: -34.704444, longitude: -58.6409217 },
+    { name: "Hospital Fitz Roy", address: "Cazadores de Coquimbo 3461", telephones: 1159823231, notes: "", latitude: -34.5168192, longitude: -58.521044 },
+    { name: "Hospital Italiano", address: "Juan Domingo Perón 4190", telephones: 1159823231, notes: "", latitude: -34.6061144, longitude: -58.425836 },
+    { name: "Hospital Central de San Isidro", address: "Av. Sta Fe 431", telephones: 1159823231, notes: "", latitude: -34.4775386, longitude: -58.5102502 },
+    { name: "Hospital de Morón", address: "Rodolfo Monte 848", telephones: 1159823231, notes: "", latitude: -34.6586441, longitude: -58.6098974 }
   ];
 
   return hospitals;
@@ -218,7 +218,7 @@ function selectLocation(location) {
     element.tabIndex = 0
     element.addEventListener("click", () => {
       origMap.setZoom(16)
-      markers = Object.values(origMap.__gm.Ja.j)
+      markers = Object.values(origMap.__gm.Ia.j)
       marker = markers.find(marker => (marker.title && element.id.includes(marker.title)))
       origMap.panTo(marker.getPosition())
       
