@@ -1,5 +1,5 @@
 let origMap
-
+let markers = []
 async function buildContent() {
 
   map = document.querySelector("#map");
@@ -249,6 +249,7 @@ function selectLocation(location) {
       origMap.panTo(marker.getPosition());
       document.getElementById(marker.title + " listElement").focus()
     });
+    markers.push(marker)
   })
   totalHospitals.appendChild(document.createTextNode(total + " hospitales"))
   document.getElementById("listResults").innerHTML = ""
