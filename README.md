@@ -11,15 +11,15 @@ Built in vanilla javascript, using modern technologies like: google-maps, web-co
 |-----------------------------------------------------|-----------------------------------------------------|
 | ![](resources/img/screenshots/home-01.png)          | ![](resources/img/screenshots/home-02.png)          |
 
-| Home page                                           | Self-test                                           |
+| Home page                                           | Self-Test                                           |
 |-----------------------------------------------------|-----------------------------------------------------|
 | ![](resources/img/screenshots/home-03.png)          | ![](resources/img/screenshots/autotest-01.png)      |
 
-| Self-test                                           | Cases-hot-map                                       |
+| Self-Test                                           | Cases Hot-Map                                       |
 |-----------------------------------------------------|-----------------------------------------------------|
 | ![](resources/img/screenshots/autotest-02.png)      | ![](resources/img/screenshots/mapa-de-casos-01.png) |
 
-| Cases-hot-map                                       | Cases-hot-map                                       |
+| Cases Hot-Map                                       | Cases Hot-Map                                       |
 |-----------------------------------------------------|-----------------------------------------------------|
 | ![](resources/img/screenshots/mapa-de-casos-02.png) | ![](resources/img/screenshots/mapa-de-casos-03.png) |
 
