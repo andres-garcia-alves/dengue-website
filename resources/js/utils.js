@@ -2,7 +2,7 @@ async function loadConfig() {
 
   try {
     // get data
-    const request = "../config.json";
+    const request = "../resources/json/config.json";
     const response = await fetch(request);
     if (response.status != 200) { throwError(request, response); }
 

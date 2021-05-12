@@ -14,7 +14,7 @@ async function buildContent() {
   let config = await loadConfig();
 
   // get markers
-  markersData = await this.getData(); // this.getTestData()
+  markersData = await this.getData(false);
 
   // render markers
   this.renderTotals(stats, markersData, config);
@@ -24,12 +24,13 @@ async function buildContent() {
 };
 
 
-// data retrieval
-async function getData() {
+// production/test data retrieval
+async function getData(isProd) {
 
   try {
     // get data
-    let response = await fetch("https://marker-service.herokuapp.com/map/markers");
+    let dataURI = (isProd) ? "https://marker-service.herokuapp.com/map/markers" : "../resources/json/markers.json";
+    let response = await fetch(dataURI);
     if (response.status != 200) { throwError(request, response); }
 
     // parse response
@@ -37,20 +38,6 @@ async function getData() {
     return markersData;
 
   } catch (error) { throw error }
-}
-
-
-// test data retrieval
-async function getTestData() {
-  const markersData = [
-    { state: "C.A.B.A.", city: "CAECE", latitude: -34.6090000, longitude: -58.3786700, cases: 100, intensity: 1 },
-    { state: "Buenos Aires", city: "Mar del Plata", latitude: -38.0063098, longitude: -57.5431993, cases: 10, intensity: 1 },
-    { state: "Córdoba", city: "La Falda", latitude: -31.0968835, longitude: -64.4828954, cases: 20, intensity: 1 },
-    { state: "Salta", city: "Los Andes", latitude: -24.2804591, longitude: -66.9380861, cases: 30, intensity: 1 },
-    { state: "Santa Fe", city: "Rosario", latitude: -32.976674, longitude: -60.6861702, cases: 40, intensity: 1 }
-  ];
-
-  return markersData;
 }
 
 
