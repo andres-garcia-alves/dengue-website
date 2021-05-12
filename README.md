@@ -3,7 +3,7 @@
 A responsive website with dengue prevention info, cases hot-map, self-test, hospital locator and more...  
 [LIVE DEMO HERE](https://andres-garcia-alves.github.io/dengue-frontend/).  
 
-Built in vanilla javascript, using modern technologies like: google-maps, web-components, media-queries, flexbox, css-grid, css-custom-properties, etc.  
+Built in vanilla javascript, using modern technologies like: google-maps, web-components, media-queries, flexbox, css-grid, css-custom-properties, etc.
 
 &nbsp;
 
@@ -38,4 +38,5 @@ Built in vanilla javascript, using modern technologies like: google-maps, web-co
 
 Developed for subject 'Desarrollo de un Proyecto', on CAECE University, Buenos Aires, Argentina.  
 
-This is the first public release of this proyect.
+This is the first public release of this proyect.  
+If you want, please send me your feedback about this game: andres.garcia.alves@gmail.com
