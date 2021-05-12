@@ -34,9 +34,8 @@ Built in vanilla javascript, using modern technologies like: google-maps, web-co
 | ![](resources/img/screenshots/prevencion.png)       | ![](resources/img/screenshots/transmision.png)      |
 
 &nbsp;
-&nbsp;
 
-Developed for subject 'Desarrollo de un Proyecto', on CAECE University, Buenos Aires, Argentina.  
+This is the first public release of this project.  
+Developed for subject 'Desarrollo de un Proyecto', at CAECE University, Buenos Aires, Argentina.  
 
-This is the first public release of this proyect.  
-If you want, please send me your feedback about this game: andres.garcia.alves@gmail.com
+Please send me your feedback about this website: andres.garcia.alves@gmail.com
