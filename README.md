@@ -1,4 +1,4 @@
-# Dengue Frontend
+# Dengue Website
 
 A responsive website with dengue prevention info, cases hot-map, self-test, hospital locator and more...  
 [LIVE DEMO HERE](https://andres-garcia-alves.github.io/dengue-frontend/).  
