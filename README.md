@@ -11,31 +11,32 @@ Built in vanilla javascript, using modern technologies like: google-maps, web-co
 
 | Home page                                           | Home page                                           |
 |-----------------------------------------------------|-----------------------------------------------------|
-| ![](resources/img/screenshots/home-01.png)          | ![](resources/img/screenshots/home-02.png)          |
+| ![](resources/img/screenshots/home-01.jpg)          | ![](resources/img/screenshots/home-02.jpg)          |
 
 | Home page                                           | Self-Test                                           |
 |-----------------------------------------------------|-----------------------------------------------------|
-| ![](resources/img/screenshots/home-03.png)          | ![](resources/img/screenshots/autotest-01.png)      |
+| ![](resources/img/screenshots/home-03.jpg)          | ![](resources/img/screenshots/autotest-01.jpg)      |
 
 | Self-Test                                           | Cases Hot-Map                                       |
 |-----------------------------------------------------|-----------------------------------------------------|
-| ![](resources/img/screenshots/autotest-02.png)      | ![](resources/img/screenshots/mapa-de-casos-01.png) |
+| ![](resources/img/screenshots/autotest-02.jpg)      | ![](resources/img/screenshots/mapa-de-casos-01.jpg) |
 
 | Cases Hot-Map                                       | Cases Hot-Map                                       |
 |-----------------------------------------------------|-----------------------------------------------------|
-| ![](resources/img/screenshots/mapa-de-casos-02.png) | ![](resources/img/screenshots/mapa-de-casos-03.png) |
+| ![](resources/img/screenshots/mapa-de-casos-02.jpg) | ![](resources/img/screenshots/mapa-de-casos-03.jpg) |
 
 | Hospitals                                           | News                                                |
 |-----------------------------------------------------|-----------------------------------------------------|
-| ![](resources/img/screenshots/hospitales.png)       | ![](resources/img/screenshots/noticias.png)         |
+| ![](resources/img/screenshots/hospitales.jpg)       | ![](resources/img/screenshots/noticias.jpg)         |
 
 | Prevention info                                     | Propagation info                                    |
 |-----------------------------------------------------|-----------------------------------------------------|
-| ![](resources/img/screenshots/prevencion.png)       | ![](resources/img/screenshots/transmision.png)      |
+| ![](resources/img/screenshots/prevencion.jpg)       | ![](resources/img/screenshots/transmision.jpg)      |
 
 &nbsp;
 
 This is the first public release of this project.  
 Developed for subject 'Desarrollo de un Proyecto', at CAECE University, Buenos Aires, Argentina.  
 
+This source code is licensed under MIT licence.  
 Please send me your feedback about this website: andres.garcia.alves@gmail.com
