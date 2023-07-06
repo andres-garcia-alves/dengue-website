@@ -35,6 +35,12 @@ Built in vanilla javascript, using modern technologies like: google-maps, web-co
 
 &nbsp;
 
+### Version History
+
+v1.0 (2021.05.12) - Initial release.  
+
+&nbsp;
+
 This is the first public release of this project.  
 Developed for subject 'Desarrollo de un Proyecto', at CAECE University, Buenos Aires, Argentina.  
 
